@@ -1,0 +1,203 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #36384D;
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	display: flex;
+}
+
+
+.contenedor {
+	background-color: #F2F2F2;
+	width: 700px;
+	height: 460px;
+	margin: auto;
+	border-radius: 30px;
+	display: flex;
+}
+
+.izquierda {
+	width: 50%;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+
+.derecha {
+	border-radius: 50px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.divImagen {
+	width: 88%;
+	margin: auto;
+	height: 92%;
+	border-radius: 20px;
+
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+}
+
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 30px;
+	color: #252944;
+}
+
+p, label {
+	font-family: 'Roboto Serif', serif;
+	color: #252944;
+	font-size: 14px;
+}
+
+.contenedorForm {
+	width: 84%;
+	height: 84%;
+	margin:auto;
+}
+
+.descripcion {
+	margin-top: 16px;
+}
+
+
+.cuerpo {
+	width: 100%;
+	height: 80px;
+	margin-top: 16px;
+	display: flex;
+}
+
+.iconos {
+	height: 100%;
+	width: 30px;
+}
+
+.listado {
+	height: 100%;
+	width: 500px;
+	text-align: left;
+	line-height: 29px;
+}
+
+
+.icono {
+	width: 28px;
+	height: 25px;
+}
+
+form {
+	width: 100%;
+	height: 150px;
+	text-align: left;
+	padding-top: 20px;
+}
+
+#mail {
+	width: 100%;
+	height: 45px;
+	border-radius: 8px;
+	border:1px solid #252944;
+	margin-top: 4px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.boton {
+	width: 100%;
+	height: 45px;
+	border-radius: 12px;
+	background-color: #252944;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+
+.error {
+	color:red;
+	visibility: hidden;
+}
+
+
+
+/*SEGUNDO HTML*/
+
+
+.contenedorGracias {
+	width: 400px;
+	background-color: #F2F2F2;
+	height: 400px;
+	margin: auto;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.contenedorInterno {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border-radius: 30px;
+}
+
+
+.cabezaaa {
+	width: 100%;
+	height: 20%;
+}
+
+
+.iconoLogo {
+	width: 90px;
+	height: 80px;
+	transform: translateX(-10px);
+}
+
+
+.cuerpooo {
+	width: 100%;
+	height: 60%;
+	text-align: left;
+}
+
+
+.tituloGracias {
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+.newEmail {
+	width: 90%;
+	height: 40px;
+	border-radius: 8px;
+	color:white;
+	margin: auto;
+	margin-top: 16px;
+	background-color: #252944;
+	font-family: 'Roboto Serif', serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}

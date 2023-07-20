@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+#principal {
+	width: 100%;
+	height: 100vh;
+	background-color: #F2F2F2;
+	
+}
+
+.nombrePortfolio {
+	width: 100%;
+	height: 15%;
+	padding-top: 62px;
+	padding-left: 32px;
+}
+
+.contenedor1 {
+	display: flex;
+	width: 100%;
+	height: 85%;
+	position: relative;
+}
+
+.miNombre {
+	height: 100%;
+	width: 50%;
+	padding-top: 260px;
+	padding-left: 96px;
+	position: relative;
+}
+
+.miFoto {
+	height: 100%;
+	width: 50%;
+	position: relative;
+}
+
+.nombre {
+	font-family: 'Caveat', cursive;
+	font-size: 80px;
+	display: inline;
+	position: absolute;
+	z-index: 20;
+}
+
+.asd {
+	bottom: 60px;
+}
+
+.portafolioPalabra {
+	font-family: 'Ubuntu', sans-serif;
+	display: inline;
+	letter-spacing: 4px;
+	font-size: 14px;
+}
+
+.contenedorImagen {
+	width: 62%;
+	height: 410px;
+	left: 15%;
+	background-color: blue;
+	background-color: white;
+	position: absolute;
+	z-index: 2;
+}
+
+.cuadrado {
+	height: 40px;
+	width:420px;
+	background-color: #EAE94F;
+	position: absolute;
+	bottom: 155px;
+	left: 85px;
+}
+
+.dos {
+	width: 260px;
+	bottom: 60px;
+}
+
+.cuadradoFoto {
+	width: 62%;
+	height: 380px;
+	background-color: #EAE94F;
+	position: absolute;
+	left: 19%;
+	bottom:80px;
+}
+
+.selfie {
+	width: 100%;
+	height: 100%;
+}
+
+.maquetador {
+	position: absolute;
+	display: inline;
+	left: 45%;
+	right: 45%;
+	top: 80px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 34px;
+	transform: rotate(-20deg);
+}
+
+
+
+#fortalezas {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 320px;
+	background-color: #292e33;
+
+}
+
+.titulo {
+	height: 25%;
+	width: 100%;
+	padding-top: 54px;
+	padding-left: 48px;
+}
+
+.tituloF {
+	font-family: 'Ubuntu', sans-serif;
+	display: inline;
+	font-size: 20px;
+	color: #8e7f6e;
+
+}
+
+
+.contenedorCajas {
+	width:100%;
+	height: 75%;
+	margin:auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.caja {
+	width: 30%;
+	justify-content: center;
+	text-align: center;
+	padding-top: 40px; 
+
+}
+
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing: 2px;
+	font-size: 28px;
+	color:white;
+	line-height: 82px;
+}
+
+.desc {
+	font-family: 'Ubuntu', sans-serif;
+	display: inline;
+	letter-spacing: 2px;
+	display: inline;
+	font-size: 14px;
+	color:white;
+
+}
+
+
+#proyectos {
+	width: 100%;
+	height: 100vh;
+	padding-top: 40px;
+	background-color: #F2F2F2;
+}
+
+
+.mis {
+	text-align: center;
+	letter-spacing: 6px;
+	padding-bottom: 15px;
+	font-size: 40px;
+	color: black;
+
+}
+
+
+.contenedorSlider {
+	background-color: #EAE94F;
+	width: 50%;
+	height: 80%;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 22px;
+	margin-right: 22px;
+}
+
+
+.contImagen {
+	background-color: white;
+	width: 90%;
+	height: 90%;
+	border-radius: 50px;
+
+}
+
+.botonIzquierda {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border:solid 3px black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+.principalSlider {
+	width: 100%;
+	height: 86%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+
+
+.botonDerecha {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border:solid 3px black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+.laImg {
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+
+}
+
+
+#sobreMi {
+	width: 100%;
+	height: 100vh;
+	padding-top: 40px;
+	background-color: #F2F2F2;
+	
+	background-color: #292e33;
+
+}
+
+.info {
+	width: 100%;
+	height: 500px;
+	background-color: #EAE94F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.textto {
+	width: 80%;
+	height: 77%;
+}
+
+
+.miInfo {
+	font-family: 'Ubuntu', sans-serif;
+    display: inline;
+    letter-spacing: 2px;
+    display: inline;
+    font-size: 28px;
+    color: black;
+}

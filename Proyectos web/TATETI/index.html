@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ta Te Ti</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="contenedorAnimacion" id="azul">
+	
+	<div class="animacionX">TA-TE-TI
+		</div>
+		
+	<img src="X.png" class="xAnimacion">	
+
+	</div>
+
+	<div class="contenedor">
+		
+		<div class="head">
+
+			<div class="arriba"><img src="XO.png" class="xo"></div>
+			<div class="arriba">
+				<div class="turno">
+					<img src="OGRIS.png" class="gris">
+					<p class="turnn">TURNO</p>
+				</div>
+
+			</div>
+			<div class="arriba"><img src="BOTON.png" class="boton"></div>
+			
+
+		</div>
+
+
+
+		<div class="body">
+
+			<div class="cuadrado 1" id="cuadrante1" onclick="saberXO(0)"><img src="" id="1"></div>
+			<div class="cuadrado 2" id="cuadrante2" onclick="saberXO(1)"><img src="" id="2"></div>
+			<div class="cuadrado 3" id="cuadrante3" onclick="saberXO(2)"><img src="" id="3"></div>
+
+			<div class="cuadrado 4" id="cuadrante4" onclick="saberXO(3)"><img src="" id="4"></div>
+			<div class="cuadrado 5" id="cuadrante5" onclick="saberXO(4)"><img src="" id="5"></div>
+			<div class="cuadrado 6" id="cuadrante6" onclick="saberXO(5)"><img src="" id="6"></div>
+
+
+			<div class="cuadrado 7" id="cuadrante7" onclick="saberXO(6)"><img src="" id="7"></div>
+			<div class="cuadrado 8" id="cuadrante8" onclick="saberXO(7)"><img src="" id="8"></div>
+			<div class="cuadrado 9" id="cuadrante9" onclick="saberXO(8)"><img src="" id="9"></div>
+
+			
+			
+		</div>
+
+
+
+
+		<div class="foot">
+			<div class="pies uno"><p class="puntos X">Puntos X<br><b class="ptosX">O</b></p></div>
+			<div class="pies dos"><p class="puntos T">Rondas<br><b class="rondasRestantes">O</b></p></div>
+			<div class="pies tres"><p class="puntos O">Puntos O<br><b class="ptosO">O</b></p></div>
+			
+		</div>
+
+
+	</div>
+
+
+	<div class="contenedorAnimacion o" id="naranja">
+	
+	<div class="animacionO">TA-TE-TI
+		</div>
+		
+	<img src="O.png" class="xAnimacion">	
+
+	</div>
+
+	<dialog id="dialogo">
+
+		<div class="superior">
+		<h1>Bienvenido al Ta Te Ti</h1>
+		<br>
+		<br>	
+		<h2>Escoge tu preferido !!</h2>
+		<div class="contenedorLogos">
+			<div class="izquierda">
+					<img src="X.png" class="imagenIz" id="imagenIz">
+			</div>
+
+			<div class="derecha">
+
+					<img src="O.png" class="imagenDe" id="imagenDe">
+			</div>
+		</div>
+		</div>
+<div class="inferior">
+		
+		<input type="number" name="" id="numRondas" placeholder="Numero de rondas">
+		<div class="botonAceptar">Aceptar</div>
+		</div>
+
+	</dialog>
+
+	<dialog id="final">
+		<div class="superior">
+			<h1>Terminaste la partida !!!!</h1>
+			<br>
+			<br>
+			<br>
+			<p class="resultado"></p>
+			
+
+		</div>
+
+		<div class="inferior"><div class="volver">Volver a Jugar</div></div>
+
+
+	</dialog>
+
+<script src="java.js"></script>
+</body>
+</html>

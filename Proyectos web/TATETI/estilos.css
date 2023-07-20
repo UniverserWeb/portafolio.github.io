@@ -1,0 +1,309 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #132A35;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.contenedor {
+	width: 450px;
+	height: 550px;
+}
+
+
+
+.head {
+	width: 100%;
+	height: 15%;
+	display: flex;
+
+}
+
+.body {
+	width: 100%;
+	height: 70%;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.foot {
+	width: 100%;
+	height: 15%;
+}
+
+
+.cuadrado {
+	width: 80%;
+	height: 90%;
+	background-color:#183544;
+	margin: auto;
+	border-radius: 10px;
+	border-bottom: solid 5px #0B222D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+.arriba {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.turno {
+	width: 80%;
+	height: 64%;
+	background-color:#183544;
+	border-radius: 10px;
+	border-bottom: solid 5px #0B222D;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows:100%;
+	text-align: center;
+	align-items: center;
+}
+
+.gris {
+	width: 60%;
+	height: 60%;
+	margin: auto;
+	margin-top: 50%;
+	transform: translateY(-60%);
+}
+
+.turnn {
+	font-family: impact;
+	color:#99B4BF;
+	font-size: 20px;
+	transform: translateX(-10px);
+}
+
+
+.boton {
+	width: 50%;
+	height: 70%;
+	transform: translateX(30px);
+	cursor: pointer;
+}
+
+.xo {
+	width:70%;
+	height: 40%;
+	transform: translateX(-20px);
+}
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 93%;
+	margin: auto;
+}
+
+.pies {
+	width: 120px;
+	height: 78%;
+	background-color: red;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.uno {
+	background-color: #04D9D9;
+}
+
+.dos {
+	background-color: #A0BECB;
+}
+
+.tres {
+	background-color: #F6B229;
+}
+
+.puntos {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+}
+
+
+.animacionX,.animacionO {
+	width: 250px;
+	height: 100px;
+	background-color: #04D9D9;
+	position: absolute;
+	border-radius: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 44px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+
+}
+
+
+.contenedorAnimacion {
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	transform: translateX(-320%);
+	animation-duration: 2s;
+	transition: 0.8s;
+
+}
+
+
+.xAnimacion {
+	position: absolute;
+	margin: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -22px;
+}
+
+.animacionO {
+	background-color: #F6B229;
+}
+
+
+.o {
+	transform: translateX(-320%);
+	animation-duration: 2s;
+	transition: 0.8s;
+
+}
+
+
+@keyframes movimiento {
+	from {
+		transform: translateX(-320%);
+	}
+	to {
+		transform: translateX(-212%);
+	}
+}
+
+
+#dialogo {
+	margin: auto;
+	width: 60%;
+	height: 80%;
+	border:2px solid white;
+	border-radius: 20px;
+}
+
+
+#dialogo::backdrop {
+	background-color: rgba(0,0,0,.55);
+}
+
+
+h1,h2 {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+}
+
+
+.superior,.inferior {
+	width: 100%;
+	height: 50%;
+	background-color: #04D9D9;
+	padding-top: 40px;
+
+}
+
+.inferior {
+	background-color:#F6B229;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50% 50%;
+}
+
+.contenedorLogos {
+	width: 200px;
+	height: 80px;
+	margin: auto;
+	background-color: #132A35;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	display: flex;
+	border-radius: 20px;
+	
+}
+
+.izquierda,.derecha {
+	width: 50%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+
+.imagenIz,.imagenDe {
+	cursor: pointer;
+}
+
+input {
+	width: 120px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+.botonAceptar,.volver {
+	width: 90px;
+	height: 50px;
+	background-color: #04D9D9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto Mono', monospace;
+	border-radius: 10px;
+	cursor: pointer;
+	border:solid 2px white;
+	margin:auto;
+}
+
+#final {
+	margin: auto;
+	width: 60%;
+	height: 80%;
+	border:2px solid white;
+	border-radius: 20px;
+
+}
+
+
+#final::backdrop {
+	background-color: rgba(0,0,0,.55);
+}
+
+.resultado {
+
+font-family: 'Roboto Mono', monospace;
+font-size: 20px;
+text-align: center;
+}	
+
+.volver {
+	width: 100px;
+}

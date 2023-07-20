@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grafico</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="contenedor">
+		
+		<div class="cabeza">
+			<div class="cabeza-izquierda">
+				<p class="texto-total">Mi dinero<br><b class="total">$0</b></p> 
+				
+			</div>
+
+			<div class="cabeza-derecha">
+				
+				<div class="contorno"></div>
+				<div class="circulo"><img src="check.png" class="check"></div>
+
+
+			</div>
+
+			
+		</div>
+
+		<div class="cuerpo">
+			<div class="cuerpo-arriba">
+				<p>Ingresos - Ultimos 7 días</p>
+			</div>
+
+			<div class="cuerpo-abajo">
+				<div class="dia lunes"></div>
+				<div class="dia martes"></div>
+				<div class="dia miercoles"></div>
+				<div class="dia jueves"></div>
+				<div class="dia viernes"></div>
+				<div class="dia sabado"></div>
+				<div class="dia domingo"></div>
+				<div class="name nombre-lunes">Lun</div>
+				<div class="name nombre-martes">Mar</div>
+				<div class="name nombre-miercoles">Mier</div>
+				<div class="name nombre-jueves">Jue</div>
+				<div class="name nombre-viernes">Vie</div>
+				<div class="name nombre-sabado">Sab</div>
+				<div class="name nombre-domingo">Dom</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="pies">
+			<p>Objetivo del mes: <br><b class="objetivo">$0</b></p>
+		</div>
+
+	</div>
+
+	<div class="dinero hoy">
+
+		<div class="contenido hoy-izquierda" onclick="abrirDialog(dialogoHoy)">
+			Ganado Hoy
+		</div>
+
+		<div class="contenido hoy-derecha">
+			<b class="flecha">></b>
+		</div>
+		
+	</div>
+
+	<div class="dinero mes">
+		<div class="contenido hoy-izquierda" onclick="abrirDialog(dialogoMes)">
+			Objetivo
+		</div>
+
+		<div class="contenido hoy-derecha">
+			<b class="flecha">></b>
+		</div>
+	</div>
+
+
+	<dialog class="dialogo dHoy" id="dialogoHoy"> 
+		<p><b class="titular">JUEVES</b></p>
+		<input type="text" name="" placeholder="$$$" id="inputHoy">
+		<div class="aceptar" id="botonAceptarHoy" onclick="cerrarDialog(dialogoHoy)">Aceptar</div>
+
+	</dialog>
+
+	<dialog class="dialogo dMes" id="dialogoMes"> 
+		<p><b class="titular">OBJETIVO</b></p>
+		<input type="text" name="" placeholder="$$$" id="inputMes">
+		<div class="aceptar" id="botonAceptarMes" onclick="cerrarDialog(dialogoMes)">Aceptar</div>
+
+	</dialog>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

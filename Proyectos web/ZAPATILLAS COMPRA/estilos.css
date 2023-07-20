@@ -1,0 +1,354 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	width: 100%;
+	height: 15%;
+	background-color: #F2F2F2;
+	border-bottom: solid 0.1px black;
+	display: flex;
+}
+
+article {
+	width: 100%;
+	height: 85%;
+	background-color: #F2F2F2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.izquierda {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 32px;
+	font-size: 30px;
+	font-family: 'Geologica', sans-serif;
+
+}
+
+.medio {
+	width: 60%;
+	height: 100%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.derecha {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+}
+
+
+.listaHeader {
+	width: 65%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	align-items: center;
+	font-family: 'Geologica', sans-serif;
+font-family: 'Overpass', sans-serif;
+padding-top: 10px;
+padding-left: 18px;
+}
+
+.carritologo {
+	width: 40px;
+	height: 40px;
+}
+
+a {
+	text-decoration: none;
+	color:#8A8E90;
+}
+
+
+.avatar {
+	width: 40px;
+	height: 40px;
+}
+
+
+.contenedorIzquierda {
+	width: 45%;
+	height: 100%;
+}
+
+.contenedorDerecha {
+	width: 45%;
+	height: 80%;
+}
+
+.contenedor {
+	width: 68%;
+	height: 84%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.imagenContenedor {
+	width:90%;
+	height: 75%;
+	margin: auto;
+}
+
+.imagenMain {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+.imagenesContenedor {
+	width:90%;
+	height: 25%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imagenes {
+	width: 20%;
+	height: 70%;
+}
+
+.imagenMiniatura {
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+
+.imagenMiniatura:hover {
+
+	border:2px solid #BF4904;
+	opacity: 0.6;
+}
+
+
+
+.contenedorPies {
+	width: 100%;
+	height: 64px;
+	margin-top: 22px;
+	display: flex;
+	align-items: center;
+}
+
+.pieIzquierda,.pieDerecha {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.botonAdd {
+	width: 100%;
+	height: 70%;
+	background-color: #BF4904;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 20px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.pieIzquierda {
+	justify-content: center;
+	height: 70%;
+}
+
+.boton {
+	height: 65%;
+	width: 22%;
+	background-color: #F7F8FD;
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	border-radius: 6px;
+	border:solid 1px black;
+}
+
+.boton.cantidad {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.boton.menos,.boton.mas {
+	cursor: pointer;
+	color: #D95E32;
+	font-size: 26px;
+}
+
+#dialogo {
+	width: 42%;
+	height: 75%;
+	margin: auto;
+	 background: white;
+	 overflow: hidden;
+}
+
+#dialogo::backdrop{
+	background-color: rgba(0,0,0,0.66);
+}
+
+
+.botonsito {
+	background-color: white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	border:solid 2px black;
+}
+
+
+
+.botonsito:hover {
+	border:solid 4px black;
+}
+
+.botonsito.right{
+	right:0%;
+}
+
+.botonsito.cruz{
+	right:0%;
+	top: 22px;
+}
+
+li:hover {
+	transition: 0.2s;
+	border-bottom: solid 4px #BF4904;
+}
+
+.carritoCantidad {
+	width: 16px;
+	height: 16px;
+	background-color: red;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	color:white;
+	font-weight: 600;
+	right: 196px;
+	top: 22px;
+	visibility: hidden;
+}
+
+.carritologo {
+	cursor: pointer;
+}
+
+.contenedor-desplegable {
+
+	width: 400px;
+	height: 300px;
+	background-color: #F2F2F2;
+	position: absolute;
+	right:204px;
+	top: 60px;
+	display: none;
+	transition: 2s;
+	border-radius: 14px;
+	padding-top: 2px;
+	border:solid 1px grey;
+}
+
+.contenedor-producto {
+	width: 98%;
+	height: 100px;
+	background-color: white;
+	margin: auto;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;	
+	padding-left: 4px;
+	border:solid 1px grey;
+}
+
+.imagen-desplegable {
+	width: 20%;
+	height:80%;
+
+}
+
+.imagen-desplegable img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.texto-desplegable {
+	width: 80%;
+	height: 80%;
+	font-family: 'Geologica', sans-serif;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.cruz-desplegable {
+	background-color: red;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 12px;
+	top: 6px;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+
+}
+
+
+.contenedorcarrito {
+	width: 40px;
+	height: 40px;
+}
+
+.carritologo {
+	width: 100%;
+	height: 100%;
+}
+
+.contenedorcarrito:hover .contenedor-desplegable {
+	display: block;
+}
+
+
+li {
+	text-decoration-line: none;
+	color: black;
+}
